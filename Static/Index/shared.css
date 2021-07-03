@@ -9,7 +9,7 @@
 body {
     background-color: var(--Dark-Colour);
     margin: 0;
-
+    transition: opacity .5s;
     font-family: quicksand, sans-serif;
 }
 .navbar {

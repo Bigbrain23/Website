@@ -1,6 +1,6 @@
 #default .logo-wrapper {
     display: flex;
-    place-content: space-evenly;
+    place-content: center;
     place-items: center;
     height: 20vw;
 }
@@ -8,11 +8,27 @@
     margin-top: 5vw;
     position: absolute;
 }
-#default .logo-wrapper h1 {
+#default .introduction-wrapper {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    height: 10vw;
+}
+#default .introduction-wrapper strong {
     font-size: 3vw;
     font-weight: bold;
     letter-spacing: 0.25vw;
-    position: relative;
     color: var(--Light-Colour);
-    top: 315px;
+    position: absolute;
+    /*top: 315px;*/
+    /*float: top;*/
+}
+#default .introduction-wrapper h2 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--Light-Colour);
+    position: relative;
+    margin-top: 6.5vw;
+    /*top: 315px;*/
+    /*float: bottom;*/
 }
