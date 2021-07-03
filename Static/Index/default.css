@@ -1,0 +1,18 @@
+#default .logo-wrapper {
+    display: flex;
+    place-content: space-evenly;
+    place-items: center;
+    height: 20vw;
+}
+#default .vorlus-svg {
+    margin-top: 5vw;
+    position: absolute;
+}
+#default .logo-wrapper h1 {
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: 0.25vw;
+    position: relative;
+    color: var(--Light-Colour);
+    top: 315px;
+}

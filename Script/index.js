@@ -1,11 +1,19 @@
 function setProjects() {
     document.getElementById("default").style.display = 'none';
-    document.getElementById("projects").style.display = 'flex';
+    document.getElementById("projects").style.display = 'grid';
+    window.localStorage.setItem('lastOpen', 'projects');
 }
 function setDefault() {
-    document.getElementById("default").style.display = 'flex';
+    document.getElementById("default").style.display = 'grid';
     document.getElementById("projects").style.display = 'none';
+    window.localStorage.setItem('lastOpen', 'default');
 }
 function prepare() {
-    window.localStorage.setItem('name', 'Kristoffer');
+    const lastOpen = localStorage.getItem("lastOpen");
+    if (lastOpen === 'projects'){
+        setProjects()
+    } else {
+        setDefault()
+    }
+
 }
