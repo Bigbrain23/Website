@@ -1,30 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Vorlus</title>
 
-    <link rel="stylesheet" type="text/css" href="../Static/index.css" />
+    <link rel="stylesheet" type="text/css" href="../Static/Index/shared.css" />
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
 
-    <script src="../Script/Index.js"></script>
-</head>
-<body>
+    <body onload="prepare()"></body>
 
-<div class="container" id="default">
-    <div class="navbar">
-        <div class="navbar-link-wrapper">
-            <ul>
-                <li><a href="#" onclick="">Home</a></li>
-                <li><a href="#" onclick="showProjects()">Projects</a></li>
-            </ul>
+    <script src="../Script/index.js"></script>
+
+    <meta name="title" property="og:title" content="Vorlus">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#ff00cc">
+<!--    <meta name="image" property="og:image" content="[Image URL]">-->
+    <meta name="description" property="og:description" content="[Page description]">
+
+<body>
+<div class="container">
+    <div class="default" id="default">
+        <div class="navbar">
+            <div class="navbar-link-wrapper">
+                <ul>
+                    <li><a href="#" onclick="setDefault()">Home</a></li>
+                    <li><a href="#" onclick="setProjects()">Projects</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="container" id="projectsDiv" style="display: none">
-    <div class="testing"></div>
+        <div class="projects" id="projects" style="display: none">
+            <div class="navbar">
+                <div class="navbar-link-wrapper">
+                    <ul>
+                        <li><a href="#" onclick="setDefault()">Home</a></li>
+                        <li><a href="#" onclick="setProjects()">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 </div>
 
 </body>

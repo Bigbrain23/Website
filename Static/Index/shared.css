@@ -3,15 +3,15 @@
     --Darker-Colour: #202020;
 
     --Light-Colour: #fff;
-}
 
+    --Rep-Colour: #ff00cc;
+}
 body {
     background-color: var(--Dark-Colour);
     margin: 0;
 
     font-family: quicksand, sans-serif;
 }
-
 .navbar {
     background-color: var(--Darker-Colour);
     margin: 0;
@@ -61,10 +61,4 @@ body {
     ul {
         margin-top: 40px;
     }
-}
-
-.testing {
-    width: 100px;
-    height: 100px;
-    background-color: white;
 }
