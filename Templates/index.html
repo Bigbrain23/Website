@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Vorlus</title>
+    <title>Vorlus - Home</title>
 
     <link rel="stylesheet" type="text/css" href="../Static/Index/shared.css" />
     <link rel="stylesheet" type="text/css" href="../Static/Index/default.css" />
@@ -10,28 +10,29 @@
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
 
-    <body onload="prepare()"></body>
+<body onload="prepare()"></body>
 
-    <script src="../Script/index.js"></script>
+<script src="../Script/index.js"></script>
 
-    <meta name="title" property="og:title" content="Vorlus">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#ff00cc">
+<meta name="title" property="og:title" content="Vorlus">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ff00cc">
 <!--    <meta name="image" property="og:image" content="[Image URL]">-->
-    <meta name="description" property="og:description" content="[Page description]">
+<meta name="description" property="og:description" content="[Page description]">
 
 <body>
 <div class="container">
-    <div class="default" id="default">
-        <div class="navbar">
-            <div class="navbar-link-wrapper">
-                <ul>
-                    <li><a href="#" onclick="setProjects()">Projects</a></li>
-                    <li><a href="#" onclick="setDefault()">Home</a></li>
-                    <li><a href="#" onclick="setProjects()">Dashboard</a></li>
-                </ul>
-            </div>
+    <div class="navbar">
+        <div class="navbar-link-wrapper">
+            <ul>
+                <li><a href="#" onclick="setProjects()">Projects</a></li>
+                <li><a href="#" onclick="setDefault()">Home</a></li>
+                <li><a href="#" onclick="setProjects()">Dashboard</a></li>
+            </ul>
         </div>
+    </div>
+
+    <div class="page" id="default">
         <div class="logo">
             <div class="logo-wrapper">
                 <svg class="vorlus-svg" width="400" height="400" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,21 +48,12 @@
         </div>
     </div>
 
-        <div class="projects" id="projects" style="display: none">
-            <div class="navbar">
-                <div class="navbar-link-wrapper">
-                    <ul>
-                        <li><a href="#" onclick="setProjects()">Projects</a></li>
-                        <li><a href="#" onclick="setDefault()">Home</a></li>
-                        <li><a href="#" onclick="setProjects()">Dashboard</a></li>
-                    </ul>
-                </div>
-            </div>
-            <section class="projects-list">
-                <h1>Projects</h1>
-            </section>
+    <div class="page" id="projects" style="display: none">
 
-        </div>
+        <section class="projects-list">
+            <h1>Projects</h1>
+        </section>
+    </div>
 </div>
 
 </body>
