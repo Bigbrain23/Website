@@ -1,0 +1,98 @@
+#projects {
+    --project-border-color: #fff;
+}
+
+#projects .projects-introduction {
+    place-items: center;
+    place-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 10vw;
+}
+#projects .projects-introduction h1 {
+    font-size: 3vw;
+    color: var(--Light-Colour);
+    margin: 0;
+}
+#projects .projects-introduction h2 {
+    font-size: 1.5vw;
+    color: var(--Light-Colour);
+    margin: 0;
+}
+#projects .projects-list {
+    margin: 5vw 0 0;
+    place-self: center;
+    width: 90%;
+    border-radius: 2vw;
+    background-color: var(--Darker-Colour);
+
+    place-content: center;
+    place-items: center;
+    color: var(--Light-Colour);
+}
+#projects .projects-list .card {
+    margin: 1.5vw;
+    text-align: center;
+    background-color: var(--Dark-Colour);
+    border-radius: 2vw;
+    border-color: var(--project-border-color);
+    place-items: center;
+    place-content: center;
+    border-style: solid;
+    overflow: auto;
+    transition: all .3s ease-in-out;
+}
+#projects .projects-list .card h1 {
+    font-size: 2vw;
+    margin: 1vw 0 0 10vw;
+}
+#projects .projects-list .card h2 {
+    font-size: 1vw;
+    margin: 0 0 0 10vw;
+}
+#vorcil h3 {
+    color: red;
+    font-size: 1vw;
+    margin-left: 10vw;
+}
+#projects .projects-list .card img {
+    place-self: end;
+    max-height: 100%;
+    height: 10vw;
+    border-radius: 2vw;
+    float: right;
+}
+#projects .projects-list .card button {
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: .4vw .5vw;
+    border-radius: 10vw;
+    transition: .5s ease;
+    transform: scale(1) perspective(1000px);
+    backface-visibility: hidden;
+    margin-right: -9vw;
+    margin-top: .5vw;
+    float: right;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+#projects .projects-list .card button:hover {
+    transform: scale(1.1) perspective(1000px);
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+/*
+Notes
+
+#projects .projects-list .card:hover {
+    transform: scale(1.05) perspective(1000px);
+    backface-visibility: hidden
+}
+INCLUDE original:
+    transform: scale(1) perspective(1000px);
+    backface-visibility: hidden
+*/
