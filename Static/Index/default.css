@@ -2,11 +2,12 @@
     display: flex;
     place-content: center;
     place-items: center;
-    height: 20vw;
+    height: 25vw;
 }
 #default .vorlus-svg {
     margin-top: 5vw;
     position: absolute;
+    height: 25vw;
 }
 #default .introduction-wrapper {
     display: flex;
@@ -20,6 +21,7 @@
     letter-spacing: 0.25vw;
     color: var(--Light-Colour);
     position: absolute;
+
     /*top: 315px;*/
     /*float: top;*/
 }
