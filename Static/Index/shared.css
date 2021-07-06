@@ -25,3 +25,8 @@ body {
 img {
     pointer-events: none;
 }
+.copyright-notice {
+    height: 5vw;
+    background-color: var(--Darker-Colour);
+    float: bottom;
+}

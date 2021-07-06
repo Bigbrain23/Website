@@ -5,7 +5,7 @@ function setProjects() {
     setTimeout(function(){
         document.getElementById("default").style.display = 'none';
         document.getElementById("projects").style.display = 'grid';
-        document.querySelector('title').textContent = "Projects - Vorlus";
+        document.querySelector('title').textContent = "Vorlus - Projects";
         window.localStorage.setItem('lastOpen', 'projects');
         setTimeout(function () {
             document.querySelector('#projects').style.opacity = 1;
@@ -32,6 +32,7 @@ function prepare() {
     if (lastOpen === 'projects'){
         document.getElementById("default").style.display = 'none';
         document.getElementById("projects").style.display = 'grid';
+        document.querySelector('title').textContent = "Vorlus - Projects";
     } else {
         document.getElementById("default").style.display = 'grid';
         document.getElementById("projects").style.display = 'none';

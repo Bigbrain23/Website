@@ -76,7 +76,6 @@
     backface-visibility: hidden;
     margin-right: -9vw;
     margin-top: .5vw;
-    float: right;
     transition-duration: 0.8s;
     transition-property: transform;
 }
@@ -84,6 +83,18 @@
     transform: scale(1.1) perspective(1000px);
     backface-visibility: hidden;
     cursor: pointer;
+}
+#projects .projects-list .card #vorcilAuth2o button {
+    float: right;
+}
+#projects .vorcilMediaButton img {
+    filter: saturate(0) brightness(2);
+    max-width: 3vw;
+    object-fit: contain;
+}
+#projects .vorcilMediaButton button {
+    width: 3vw;
+    height: 3vw;
 }
 /*
 Notes
