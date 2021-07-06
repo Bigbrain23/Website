@@ -78,14 +78,12 @@
     margin-top: .5vw;
     transition-duration: 0.8s;
     transition-property: transform;
+    float: right;
 }
 #projects .projects-list .card button:hover {
     transform: scale(1.1) perspective(1000px);
     backface-visibility: hidden;
     cursor: pointer;
-}
-#projects .projects-list .card #vorcilAuth2o button {
-    float: right;
 }
 #projects .vorcilMediaButton img {
     filter: saturate(0) brightness(2);

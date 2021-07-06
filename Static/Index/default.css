@@ -5,9 +5,8 @@
     height: 25vw;
 }
 #default .vorlus-svg {
-    margin-top: 5vw;
-    position: absolute;
     height: 25vw;
+    margin-top: 3vw;
 }
 #default .introduction-wrapper {
     display: flex;
@@ -33,4 +32,19 @@
     margin-top: 6.5vw;
     /*top: 315px;*/
     /*float: bottom;*/
+}
+#default .copyright-spacer {
+    height: 10vw;
+    margin-top: 10vw;
+    background-color: white;
+}
+#default .aboutUs {
+
+}
+#default .aboutUs h1 {
+    color: var(--Light-Colour);
+    font-size: 2.5vw;
+    letter-spacing: .1vw;
+    font-weight: bold;
+    text-align: center;
 }
