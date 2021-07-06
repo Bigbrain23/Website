@@ -43,7 +43,7 @@ function vorcilAuth2o() {
     if (window.sessionStorage.getItem('vorcilAuth2oClicked')) return;
     window.sessionStorage.setItem('vorcilAuth2oClicked', 'true');
     document.querySelector('#vorcilAuth2o').style.transform = "rotate(180deg)";
-    location.href='https://discord.com/api/oauth2/authorize?client_id=846435093194604554&permissions=8&scope=bot';
+    // location.href='https://discord.com/api/oauth2/authorize?client_id=846435093194604554&permissions=8&scope=bot';
     setTimeout(function () {
         document.querySelector('#vorcilAuth2o').style.display = "none";
         const tag = document.createElement("h3");
