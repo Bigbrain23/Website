@@ -83,7 +83,7 @@
 #projects .projects-list .card button:hover {
     transform: scale(1.1) perspective(1000px);
     backface-visibility: hidden;
-    cursor: pointer;
+    cursor: url("../SVGs/pointer.svg"), pointer;
 }
 #projects .vorcilMediaButton img {
     filter: saturate(0) brightness(2);

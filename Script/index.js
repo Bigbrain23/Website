@@ -34,6 +34,7 @@ function setDash() {
     }, 250);
 }
 function prepare() {
+    console.log("If you don't know what you're doing, we recommend closing this tab, otherwise, consider getting a job here.");
     const lastOpen = localStorage.getItem("lastOpen");
     window.sessionStorage.clear();
     if (lastOpen === 'projects'){
@@ -44,7 +45,6 @@ function prepare() {
         document.getElementById("default").style.display = 'grid';
         document.getElementById("projects").style.display = 'none';
     }
-
 }
 function vorcilAuth2o() {
     if (window.sessionStorage.getItem('vorcilAuth2oClicked')) return;

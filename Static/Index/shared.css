@@ -1,3 +1,5 @@
+
+
 * {
     --Dark-Colour: #2e2e2e;
     --Darker-Colour: #202020;
@@ -19,6 +21,11 @@ body {
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
+    cursor: url("../SVGs/cursor.svg"), auto;
+}
+button {
+    cursor: url("../SVGs/pointer.svg"), pointer;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -36,7 +43,9 @@ img {
     height: 5vw;
     background-color: var(--Darker-Colour);
     color: var(--Light-Colour);
-    position:absolute; bottom:0;
+    position: absolute;
+    bottom: 0;
+    margin-top: 3vw;
     width: 100%;
 }
 .copyright-notice h1 {
