@@ -45,7 +45,7 @@ img {
     color: var(--Light-Colour);
     position: absolute;
     bottom: 0;
-    margin-top: 3vw;
+    margin-top: 10vw;
     width: 100%;
 }
 .copyright-notice h1 {
