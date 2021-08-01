@@ -1,6 +1,6 @@
 /*Media queries*/
 /*Smallest screens*/
-@media screen and (max-width:500px) {
+@media only screen and (max-width: 645px) {
     .logo-wrapper {
         width: 85%;
         place-self: center;
@@ -8,22 +8,70 @@
     #default .introduction-wrapper strong {
         font-size: 15vw;
     }
+    .introduction-wrapper h2 {
+        display: none !important;
+    }
+    .aboutUs h2 {
+        font-size: 6vw !important;
+    }
+    .contact h2 {
+        font-size: 5vw !important;
+    }
+    .contact h3 {
+        font-size: 6vw !important;
+    }
+    .contact .payments {
+        font-size: 6vw !important;
+        margin-left: -10px !important;
+    }
+    .copyright-notice {
+        height: 5%;
+    }
+    .copyright-notice h1 {
+        font-size: 5vw;
+    }
+    
 }
 /*Smaller screens*/
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 980px) and (min-width: 645px) {
     .logo-wrapper {
         width: 50%;
         place-self: center;
     }
-    #default .introduction-wrapper strong {
+    .introduction-wrapper strong {
         font-size: 10vw;
     }
-    #default .introduction-wrapper h2 {
+    .introduction-wrapper h2 {
         display: none;
     }
-}
+    .aboutUs {
+        height: 120px;
+    }
+    .aboutUs h1 {
+        font-size: 30px;
+    }
+    .aboutUs h2 {
+        font-size: 20px;
+        height: 10px;
+    }
+    .contact h1 {
+        font-size: 30px;
+    }
+    .contact h2 {
+        font-size: 20px;
+    }
+    .contact h3 {
+        font-size: 20px;
+    }
+    .copyright-notice {
+        height: 40px;
+    }
+    .copyright-notice h1 {
+        font-size: 20px;
+    }
+  }
 /*Large screens*/
-@media screen and (min-width:1000px) {
+@media screen and (max-width: 1024px) and (min-width: 980px) {
     .logo-wrapper {
         width: 35%;
         place-self: center;
@@ -42,6 +90,13 @@
 /*    place-content: center;*/
 /*    place-items: center;*/
 /*}*/
+
+#default .aboutUs h1 {
+    letter-spacing: .1vw;
+    font-weight: bold;
+    margin: 2vw 1vw 1vw;
+}
+
 #default .logo {
     place-items: center;
     place-content: center;
@@ -67,6 +122,7 @@
     font-weight: bold;
     color: var(--Light-Colour);
     position: absolute;
+    font-size: 5vw;
 
     /*top: 315px;*/
     /*float: top;*/
@@ -76,7 +132,7 @@
     font-weight: bold;
     color: var(--Light-Colour);
     position: relative;
-    margin-top: 6.5vw;
+    margin-top: 10vw;
     /*top: 315px;*/
     /*float: bottom;*/
 }
@@ -91,17 +147,9 @@
     place-items: center;
     place-content: center;
 }
-#default .aboutUs h1 {
-    font-size: 2.5vw;
-    letter-spacing: .1vw;
-    font-weight: bold;
-    margin: 2vw 1vw 1vw;
-}
 #default .aboutUs h2 {
-    font-size: 1vw;
-    max-width: 30%;
+    max-width: 100%;
     align-self: center;
-    margin: 0 auto;
 }
 #default .contact{
     color: var(--Light-Colour);
@@ -111,16 +159,13 @@
     margin-bottom: 10vw;
 }
 #default .contact h1 {
-    font-size: 2.5vw;
     letter-spacing: .1vw;
     font-weight: bold;
     margin: 2vw 1vw 1vw;
 }
 #default .contact h2 {
-    font-size: 1vw;
-    max-width: 30%;
+    max-width: 100%;
     align-self: center;
-    margin: 0 auto;
 }
 #default .contact h3 b {
     font-weight: bolder;
@@ -130,8 +175,7 @@
     font-weight: lighter;
 }
 #default .contact h3 {
-    font-size: 1vw;
-    max-width: 30%;
+    max-width: 100%;
     align-self: center;
     margin: 0 auto;
 }
@@ -140,4 +184,49 @@
 }
 #default .contact li:nth-child(1) {
     margin-right: 7.5vw;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 980px) {
+    #default .introduction-wrapper h2 {
+        font-size: 3vw !important;
+        font-weight: bold;
+        color: var(--Light-Colour);
+        position: relative;
+        margin-top: 10vw;
+        /*top: 315px;*/
+        /*float: bottom;*/
+    }
+    .copyright-notice h1 {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1441px) {
+    #default .introduction-wrapper h2 {
+        font-size: 3vw !important;
+        font-weight: bold;
+        color: var(--Light-Colour);
+        position: relative;
+        margin-top: 10vw;
+        /*top: 315px;*/
+        /*float: bottom;*/
+    }
+    .aboutUs h1 {
+        font-size: 3vw !important;
+    }
+    .aboutUs h2 {
+        font-size: 2vw !important;
+    }
+    .contact h1 {
+        font-size: 3vw !important;
+    }
+    .contact h2 {
+    font-size: 2vw !important;
+    }
+    .contact h3 {
+        font-size: 2vw !important;
+        }
+    .copyright-notice h1 {
+        font-size: 2vw;
+    }
 }
