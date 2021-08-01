@@ -10,12 +10,12 @@
     margin-top: 10vw;
 }
 #projects .projects-introduction h1 {
-    font-size: 3vw;
+    font-size: 6vw;
     color: var(--Light-Colour);
     margin: 0;
 }
 #projects .projects-introduction h2 {
-    font-size: 1.5vw;
+    font-size: 3vw;
     color: var(--Light-Colour);
     margin: 0;
 }
@@ -43,13 +43,15 @@
     transition: all .3s ease-in-out;
 }
 #projects .projects-list .card h1 {
-    font-size: 2vw;
+    font-size: 3.5vw;
     margin: 1vw 0 0 10vw;
 }
 #projects .projects-list .card h2 {
     font-size: 1vw;
     margin: 0 0 0 10vw;
+    margin-top: 10px;
 }
+
 #vorcil h3 {
     color: red;
     font-size: 1vw;
@@ -62,6 +64,7 @@
     border-radius: 2vw;
     float: right;
 }
+
 #projects .projects-list .card button {
     background-color: #4caf50; /* Green */
     border: none;
@@ -75,7 +78,7 @@
     transform: scale(1) perspective(1000px);
     backface-visibility: hidden;
     margin-right: -9vw;
-    margin-top: .5vw;
+    margin-top: -2vw;
     transition-duration: 0.8s;
     transition-property: transform;
     float: right;
@@ -85,6 +88,48 @@
     backface-visibility: hidden;
     cursor: url("../SVGs/pointer.svg"), pointer;
 }
+
+
+
+#projects .projects-list .card-dawnroad {
+    margin: 1.5vw;
+    height: 10vw;
+    text-align: center;
+    background-color: var(--Dark-Colour);
+    border-radius: 2vw;
+    border-color: var(--project-border-color);
+    place-items: center;
+    place-content: center;
+    border-style: solid;
+    overflow: auto;
+    transition: all .3s ease-in-out;
+}
+#projects .projects-list .card-dawnroad h1 {
+    font-size: 3.5vw;
+    margin: 1vw 0 0 10vw;
+}
+#projects .projects-list .card-dawnroad h2 {
+    font-size: 1vw;
+    margin: 0 0 0 10vw;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#vorcil h3 {
+    color: red;
+    font-size: 1vw;
+    margin-left: 10vw;
+}
+#projects .projects-list .card-dawnroad img {
+    place-self: end;
+    max-height: 100%;
+    height: 9vw;
+    margin-top: 10px;
+    border-radius: 4vw;
+    float: right;
+    margin-right: 20px;
+}
+
 #projects .vorcilMediaButton img {
     filter: saturate(0) brightness(2);
     max-width: 3vw;
@@ -94,9 +139,638 @@
     width: 3vw;
     height: 3vw;
 }
+.copyright-notice1 {
+    height: 5vw;
+    background-color: var(--Darker-Colour);
+    color: var(--Light-Colour);
+    position: bottom;
+    bottom: 0;
+    margin-top: 10vw;
+    width: 100%;
+}
+.copyright-notice1 h1 {
+    font-size: 1vw;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 320px) {
+    .projects-introduction h1 {
+        font-size: 20vw !important;
+    }
+    .projects-introduction h2 {
+        font-size: 10vw !important;
+    }
+    .projects-list {
+        height: 100% !important;
+        width: 95% !important;
+        margin-top: 70px !important;
+    }
+    .projects-list .card h1 {
+    font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+}
+    .projects-list .card h2 {
+    margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+    .card {
+        height: 45% !important;
+        margin-top: 15px !important;
+    }
+    .card img {
+            place-self: end !important;
+            max-height: 100% !important;
+            height: 40vw !important;
+            margin-top: 40px !important;
+            border-radius: 4vw !important;
+            float: right !important;
+            margin-right: 1px !important;
+    }
+
+    .card-dawnroad {
+        height: 45% !important;
+    }
+    .projects-list .card-dawnroad h1 {
+        font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+    }
+        .projects-list .card-dawnroad h2 {
+            margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+    }
+    .card-dawnroad img {
+        place-self: end !important;
+            max-height: 100% !important;
+            height:  35vw !important;
+            margin-top: 43px !important;
+            border-radius: 150vw !important;
+            float: right !important;
+            margin-right: 10px !important;
+    }
+    .card button {
+    margin-right: 2vw !important;
+    margin-top: -12vw !important;
+    }
+    .copyright-notice1 {
+        height: 40% !important;
+        margin-top: 50px !important;
+        
+    }
+    .copyright-notice1 h1 {
+        font-size: 4vw !important;
+    }
+}
+@media screen and (max-width: 360px) and (min-width: 321px) {
+    .projects-introduction h1 {
+        font-size: 20vw !important;
+    }
+    .projects-introduction h2 {
+        font-size: 10vw !important;
+    }
+    .projects-list {
+        height: 100% !important;
+        width: 95% !important;
+        margin-top: 70px !important;
+    }
+    .projects-list .card h1 {
+    font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+}
+    .projects-list .card h2 {
+    margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+    .card {
+        height: 45% !important;
+        margin-top: 18px !important;
+    }
+    .card img {
+            place-self: end !important;
+            max-height: 100% !important;
+            height: 40vw !important;
+            margin-top: 40px !important;
+            border-radius: 4vw !important;
+            float: right !important;
+            margin-right: 1px !important;
+    }
+
+    .card-dawnroad {
+        height: 45% !important;
+    }
+    .projects-list .card-dawnroad h1 {
+        font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+    }
+        .projects-list .card-dawnroad h2 {
+            margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+    }
+    .card-dawnroad img {
+        place-self: end !important;
+            max-height: 100% !important;
+            height:  35vw !important;
+            margin-top: 43px !important;
+            border-radius: 150vw !important;
+            float: right !important;
+            margin-right: 10px !important;
+    }
+    .card button {
+    margin-right: 4vw !important;
+    margin-top: -13vw !important;
+    }
+    .copyright-notice1 {
+        height: 40% !important;
+        margin-top: 50px !important;
+        
+    }
+    .copyright-notice1 h1 {
+        font-size: 4vw !important;
+    }
+}
+@media screen and (max-width: 375px) and (min-width: 361px) {
+    .projects-introduction h1 {
+        font-size: 20vw !important;
+    }
+    .projects-introduction h2 {
+        font-size: 10vw !important;
+    }
+    .projects-list {
+        height: 100% !important;
+        width: 95% !important;
+        margin-top: 70px !important;
+    }
+    .projects-list .card h1 {
+    font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+}
+    .projects-list .card h2 {
+    margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+    .card {
+        height: 45% !important;
+        margin-top: 18px !important;
+    }
+    .card img {
+            place-self: end !important;
+            max-height: 100% !important;
+            height: 40vw !important;
+            margin-top: 40px !important;
+            border-radius: 4vw !important;
+            float: right !important;
+            margin-right: 1px !important;
+    }
+
+    .card-dawnroad {
+        height: 45% !important;
+    }
+    .projects-list .card-dawnroad h1 {
+        font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+    }
+        .projects-list .card-dawnroad h2 {
+            margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+    }
+    .card-dawnroad img {
+        place-self: end !important;
+            max-height: 100% !important;
+            height:  35vw !important;
+            margin-top: 43px !important;
+            border-radius: 150vw !important;
+            float: right !important;
+            margin-right: 10px !important;
+    }
+    .card button {
+    margin-right: 5vw !important;
+    margin-top: -14vw !important;
+    }
+    .copyright-notice1 {
+        height: 40% !important;
+        margin-top: 50px !important;
+        
+    }
+    .copyright-notice1 h1 {
+        font-size: 4vw !important;
+    }
+}
+@media screen and (max-width: 411px) and (min-width: 376px) {
+    .projects-introduction h1 {
+        font-size: 20vw !important;
+    }
+    .projects-introduction h2 {
+        font-size: 10vw !important;
+    }
+    .projects-list {
+        height: 100% !important;
+        width: 95% !important;
+        margin-top: 70px !important;
+    }
+    .projects-list .card h1 {
+    font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+}
+    .projects-list .card h2 {
+    margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+    .card {
+        height: 45% !important;
+        margin-top: 18px !important;
+    }
+    .card img {
+            place-self: end !important;
+            max-height: 100% !important;
+            height: 40vw !important;
+            margin-top: 40px !important;
+            border-radius: 4vw !important;
+            float: right !important;
+            margin-right: 1px !important;
+    }
+
+    .card-dawnroad {
+        height: 45% !important;
+    }
+    .projects-list .card-dawnroad h1 {
+        font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+    }
+        .projects-list .card-dawnroad h2 {
+            margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+    }
+    .card-dawnroad img {
+        place-self: end !important;
+            max-height: 100% !important;
+            height:  35vw !important;
+            margin-top: 43px !important;
+            border-radius: 150vw !important;
+            float: right !important;
+            margin-right: 10px !important;
+    }
+    .card button {
+    margin-right: -35vw !important;
+    margin-top: -12vw !important;
+    }
+    .copyright-notice1 {
+        height: 40% !important;
+        margin-top: 50px !important;
+        
+    }
+    .copyright-notice1 h1 {
+        font-size: 4vw !important;
+    }
+}
+@media screen and (max-width: 414px) and (min-width: 412px) {
+    .projects-introduction h1 {
+        font-size: 20vw !important;
+    }
+    .projects-introduction h2 {
+        font-size: 10vw !important;
+    }
+    .projects-list {
+        height: 100% !important;
+        width: 95% !important;
+        margin-top: 70px !important;
+    }
+    .projects-list .card h1 {
+    font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+}
+    .projects-list .card h2 {
+    margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+    .card {
+        height: 45% !important;
+        margin-top: 18px !important;
+    }
+    .card img {
+            place-self: end !important;
+            max-height: 100% !important;
+            height: 40vw !important;
+            margin-top: 40px !important;
+            border-radius: 4vw !important;
+            float: right !important;
+            margin-right: 1px !important;
+    }
+
+    .card-dawnroad {
+        height: 45% !important;
+    }
+    .projects-list .card-dawnroad h1 {
+        font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+    }
+        .projects-list .card-dawnroad h2 {
+            margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+    }
+    .card-dawnroad img {
+        place-self: end !important;
+            max-height: 100% !important;
+            height:  35vw !important;
+            margin-top: 43px !important;
+            border-radius: 150vw !important;
+            float: right !important;
+            margin-right: 10px !important;
+    }
+    .card button {
+    margin-right: 5vw !important;
+    margin-top: -13vw !important;
+    }
+    .copyright-notice1 {
+        height: 40% !important;
+        margin-top: 50px !important;
+        
+    }
+    .copyright-notice1 h1 {
+        font-size: 4vw !important;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 415px) {
+    .projects-introduction h1 {
+        font-size: 20vw !important;
+    }
+    .projects-introduction h2 {
+        font-size: 10vw !important;
+    }
+    .projects-list {
+        height: 100% !important;
+        width: 95% !important;
+        margin-top: 70px !important;
+    }
+    .projects-list .card h1 {
+    font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+}
+    .projects-list .card h2 {
+    margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+    .card {
+        height: 45% !important;
+        margin-top: 20px !important;
+    }
+    .card img {
+            place-self: end !important;
+            max-height: 100% !important;
+            height: 40vw !important;
+            margin-top: 40px !important;
+            border-radius: 4vw !important;
+            float: right !important;
+            margin-right: 1px !important;
+    }
+
+    .card-dawnroad {
+        height: 45% !important;
+    }
+    .projects-list .card-dawnroad h1 {
+        font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+    }
+        .projects-list .card-dawnroad h2 {
+            margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+    }
+    .card-dawnroad img {
+        place-self: end !important;
+            max-height: 100% !important;
+            height:  35vw !important;
+            margin-top: 43px !important;
+            border-radius: 150vw !important;
+            float: right !important;
+            margin-right: 10px !important;
+    }
+    .card button {
+    margin-right: -35vw !important;
+    margin-top: -12vw !important;
+    }
+    .copyright-notice1 {
+        height: 60% !important;
+        margin-top: 50px !important;
+        
+    }
+    .copyright-notice1 h1 {
+        font-size: 4vw !important;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    .projects-introduction h1 {
+        font-size: 20vw !important;
+    }
+    .projects-introduction h2 {
+        font-size: 10vw !important;
+    }
+    .projects-list {
+        height: 100% !important;
+        width: 95% !important;
+        margin-top: 70px !important;
+    }
+    .projects-list .card h1 {
+    font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+}
+    .projects-list .card h2 {
+    margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+    .card {
+        height: 45% !important;
+        margin-top: 30px !important;
+    }
+    .card img {
+            place-self: end !important;
+            max-height: 100% !important;
+            height: 40vw !important;
+            margin-top: 40px !important;
+            border-radius: 4vw !important;
+            float: right !important;
+            margin-right: 1px !important;
+    }
+
+    .card-dawnroad {
+        height: 45% !important;
+    }
+    .projects-list .card-dawnroad h1 {
+        font-size: 8vw !important;
+    text-align: left !important;
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+    }
+        .projects-list .card-dawnroad h2 {
+            margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+    }
+    .card-dawnroad img {
+        place-self: end !important;
+            max-height: 100% !important;
+            height:  35vw !important;
+            margin-top: 43px !important;
+            border-radius: 150vw !important;
+            float: right !important;
+            margin-right: 10px !important;
+    }
+    .card button {
+    margin-right: 5vw !important;
+    margin-top: -12vw !important;
+    }
+    .copyright-notice1 {
+        height: 60% !important;
+        margin-top: 50px !important;
+        
+    }
+    .copyright-notice1 h1 {
+        font-size: 4vw !important;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .projects-introduction h1 {
+        font-size: 20vw !important;
+    }
+    .projects-introduction h2 {
+        font-size: 10vw !important;
+    }
+    #projects .card h1 {
+    font-size: 10vw !important;
+    text-align: left !important;
+    margin-left: 40px !important;
+}
+    #projects .card h2 {
+    margin: 0 0 0 10vw !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+    margin-top: 15px !important;
+    margin-left: 60px !important;
+}
+    .card {
+        height: 50vw !important;
+        margin-top: 10px !important;
+    }
+    #projects .card img {
+            max-height: 100% !important;
+            height: 32vw !important;
+            border-radius: 4vw !important;
+            float: right !important;
+            margin-right: 10px !important;
+            margin-top: 125px !important;
+    }
+
+    .card-dawnroad {
+        height: 50vw !important;
+
+    }
+    #projects .card-dawnroad h1 {
+    font-size: 10vw !important;
+    text-align: left !important;
+    margin-left: 50px !important;
+    }
+    #projects .card-dawnroad h2 {
+        margin: 0 0 0 10vw !important;
+        font-size: 4vw !important;
+        text-align: left !important;
+        margin-top: 15px !important;
+        margin-left: 60px !important;
+    }
+    .card-dawnroad img {
+        max-height: 100% !important;
+        height: 30vw !important;
+        border-radius: 20vw !important;
+        float: right !important;
+        margin-right: 30px !important;
+        margin-top: 100px !important;
+    }
+    .card button {
+    margin-right: 5vw !important;
+    margin-top: -10vw !important;
+    }
+    .copyright-notice1 {
+        height: 60%;
+    }
+    .copyright-notice1 h1 {
+        font-size: 5vw;
+    }
+    .projects-list {
+        width: 90% !important;
+        margin-left: 1px !important;
+        height: 96% !important;
+    }
+}
+
 /*
 Notes
-
 #projects .projects-list .card:hover {
     transform: scale(1.05) perspective(1000px);
     backface-visibility: hidden
