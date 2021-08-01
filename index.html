@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="Static/Index/default.css" />
     <link rel="stylesheet" type="text/css" href="Static/Index/projects.css" />
     <link rel="stylesheet" type="text/css" href="Static/Index/navbar.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
 
@@ -30,9 +32,9 @@
     <div class="navbar">
         <div class="navbar-link-wrapper">
             <ul>
-                <li><a href="#" onclick="setProjects()">Projects</a></li>
-                <li><a href="#" onclick="setDefault()">Home</a></li>
-                <li><a href="#" onclick="setDash()">Dashboard</a></li>
+                <li><input style="margin-left: 50px;" type="image" class="project-img" src="Static/Photos/project.png" href="#" onclick="setProjects()"><a href="#" onclick="setProjects()">Projects</a></li>
+                <li><input style="margin-left: 35px;" type="image" class="home-img" src="Static/Photos/home.png" href="#"  onclick="setDefault()"><a href="#" onclick="setDefault()">Home</a></li>
+                <li><input style="margin-left: 65px;" type="image" class="dash-img" src="Static/Photos/dash.png" href="#" onclick="setDash()"><a href="#" onclick="setDash()">Dashboard</a></li>
             </ul>
         </div>
     </div>
@@ -49,7 +51,7 @@
         </div>
         <hr/>
         <section class="aboutUs">
-            <h1>About us</h1>
+                <h1>About us</h1>
             <h2>Vorlus is a developer studio and game publisher.<br>You can view our services and projects under the projects page</h2>
         </section>
         <hr/>
@@ -58,7 +60,7 @@
             <h2>Need help? Contact us at</h2>
             <ul>
                 <li><h3><b>General occurrences: </b><i>mail@vorlus.com</i></h3></li>
-                <li><h3><b>Payments: </b><i>payments@vorlus.com</i></h3></li>
+                <li><h3 class="payments" ><b>Payments: </b><i>payments@vorlus.com</i><h3></li>
             </ul>
         </section>
         <footer class="copyright-notice">
@@ -85,13 +87,13 @@
                     </svg>
                 </button>
             </div>
-            <div class="card" id="dawnroad">
+            <div class="card-dawnroad" id="dawnroad">
                 <img src="Static/Photos/DawnRoad_sqr%20-%20Copy.png" alt="Card-img">
                 <h1>Dawnroad</h1>
-                <h2>Dawnroad is a multiplayer fps game, with a huge selection of<br> weapons and styles to chose from</h2>
+                <h2>Dawnroad is a multiplayer fps game, with a huge selection of  <br> weapons and styles to chose from</h2>
             </div>
         </section>
-        <footer class="copyright-notice">
+        <footer class="copyright-notice1">
             <h1>© 2021 Vorlus, All Rights Reserved</h1>
         </footer>
     </div>
